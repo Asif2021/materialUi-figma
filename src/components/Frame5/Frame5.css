@@ -1,0 +1,79 @@
+.Frame_outer {
+    display: flex;
+    width: 1268px;
+    height: 112px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    right: 57px;
+    top: 470px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Frame_input {
+    display: flex !important;
+    width: 320px !important;
+    gap: 16px !important;
+    border-radius: 10px !important;
+    background: #F5F6F4 !important;
+}
+/* .Frame_input:focus{
+    outline: none !important;
+} */
+
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+border-radius: 10px !important;
+border: none !important;
+}
+.css-ittuaa-MuiInputAdornment-root{
+    color: #000000 !important;
+    font-weight: bold;
+}
+/* .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input{
+    border: none !important;
+} */
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
+    color: #000000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+    border: none;
+}
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus{
+    outline: none !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    /* border: none; */
+}
+
+.Frame_buttons {
+   margin-left: auto;
+   display: flex;
+}
+
+.Frame_button {
+    display: flex !important;
+    padding: 10px 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    border-radius: 90px !important;
+    border: 1px solid rgba(0, 0, 0, 0.30) !important;
+    color: #000000 !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;
+}
+
+ /* @media screen and (max-width: 740px) {
+   .Frame_outer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .Frame_input{
+    width: 100%;
+   }
+  } */

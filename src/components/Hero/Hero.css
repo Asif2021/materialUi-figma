@@ -1,0 +1,117 @@
+.hero_outer {
+    background-image: url("../../../public/images/stars/bgstar.svg");
+    background-color: #141416;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.stars {
+    width: 1.137px;
+    height: 1.137px;
+    flex-shrink: 0;
+    fill: rgba(255, 255, 255, 0.10);
+    width: 1.1374408006668133px;
+    height: 1.1374408006668133px;
+    top: 316.859375px;
+    left: 165.32421875px;
+}
+
+.MuiTypography-root.MuiTypography-h2 {
+    font-weight: 700 !important;
+}
+
+.hero_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 66px 163px 126px 164px;
+}
+
+.typo1 {
+    width: 771px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 64px;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -2.56px;
+    margin-left: 64px;
+    margin-left: 70.4px;
+}
+
+.typo2 {
+    display: flex;
+    width: 647px;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400 !important;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+}
+.MuiTypography-h6{
+    font-size: 1.5rem !important
+}
+
+.Ellipse_15 {
+    width: 1522px;
+    height: 1522px;
+    position: absolute;
+    right: -494px;
+    top: 213px;
+    border-radius: 1522px;
+    background: radial-gradient(50% 50% at 50% 50%, #3B71FE 0%, rgba(59, 113, 254, 0.00) 100%);
+}
+
+/* .vector {
+    width: 285px;
+    height: 10px;
+    position: absolute;
+    right: 400px;
+    right: 162px;
+    bottom: 81px; 
+    stroke-width: 6px;
+    stroke: #FFF;
+} */
+
+
+
+@media screen and (max-width: 740px) {
+    .hero_outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MuiTypography-root.MuiTypography-h2 {
+        font-weight: 200 !important;
+        font-size: xx-large !important;
+    }
+
+    .hero_inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .typo1 {
+        display: flex;
+        width: 100%;
+        font-size: small;
+        font-weight: 200 !important;
+    }
+
+    .typo2 {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
