@@ -21,10 +21,9 @@
     border-radius: 10px !important;
     background: #F5F6F4 !important;
 }
-/* .Frame_input:focus{
-    outline: none !important;
+/* .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root{
+    border-radius: 10px !important;
 } */
-
 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
 border-radius: 10px !important;
 border: none !important;

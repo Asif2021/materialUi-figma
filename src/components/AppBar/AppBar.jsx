@@ -65,26 +65,26 @@ function DrawerAppBar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{mr:2, display: { sm: "none" } }}
+            sx={{mr:2, display: { md: "none" } }}
             className="menu_icon"          >
             <MenuIcon  />
           </Box>
           
-          <Box sx={{mr:2, display: { sm: "none", width:'100%' } }}>
+          <Box sx={{mr:2, display: { md: "none", width:'100%' } }}>
             <img src="./images/logo.svg" alt="logo" />
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
-            <img src="./images/logo.svg" alt="logo" sx={{display:{sm:'none'}}} />
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <img src="./images/logo.svg" alt="logo" sx={{display:{md:'none'}}} />
             <img src="./images/divider.svg" alt="divider" className="divider"/>
            <Button sx={{color:'#777E90'}}>
            <BasicMenu />
            </Button>
           </Box>
 
-          <Box sx={{ display: { xs: "none", sm: "flex" }, color:'#777E90' }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, color:'#777E90' }}>
             <Button className="appbar_connect_btn">support</Button>
-            <Button sx={{marginX:'24px'}} className="appbar_connect_btn" startIcon={<LanguageIcon />}>
+            <Button className="appbar_connect_btn" startIcon={<LanguageIcon />}>
               language
             </Button>
             <IconButton
@@ -119,7 +119,7 @@ function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

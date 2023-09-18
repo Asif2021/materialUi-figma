@@ -6,17 +6,6 @@
     overflow: hidden;
 }
 
-.stars {
-    width: 1.137px;
-    height: 1.137px;
-    flex-shrink: 0;
-    fill: rgba(255, 255, 255, 0.10);
-    width: 1.1374408006668133px;
-    height: 1.1374408006668133px;
-    top: 316.859375px;
-    left: 165.32421875px;
-}
-
 .MuiTypography-root.MuiTypography-h2 {
     font-weight: 700 !important;
 }
@@ -31,20 +20,28 @@
 }
 
 .typo1 {
+    position: relative;
     width: 771px;
     color: #FFFFFF;
     text-align: center;
     font-size: 64px;
     line-height: 110%;
-    /* 70.4px */
     letter-spacing: -2.56px;
-    margin-left: 64px;
-    margin-left: 70.4px;
+}
+
+.vector {
+    position: absolute !important;
+    width: 285px;
+    height: 10px;
+    right: 400px;
+    right: 140px;
+    bottom: 0;
+    stroke-width: 6px;
+    stroke: #FFF;
 }
 
 .typo2 {
-    display: flex;
-    width: 647px;
+    width: 771px;
     color: #D9D9D9;
     text-align: center;
     font-size: 24px;
@@ -52,7 +49,8 @@
     line-height: 32px;
     letter-spacing: -0.48px;
 }
-.MuiTypography-h6{
+
+.MuiTypography-h6 {
     font-size: 1.5rem !important
 }
 
@@ -66,20 +64,9 @@
     background: radial-gradient(50% 50% at 50% 50%, #3B71FE 0%, rgba(59, 113, 254, 0.00) 100%);
 }
 
-/* .vector {
-    width: 285px;
-    height: 10px;
-    position: absolute;
-    right: 400px;
-    right: 162px;
-    bottom: 81px; 
-    stroke-width: 6px;
-    stroke: #FFF;
-} */
 
 
-
-@media screen and (max-width: 740px) {
+@media screen and (max-width:800px) {
     .hero_outer {
         display: flex;
         justify-content: center;
@@ -99,10 +86,19 @@
     }
 
     .typo1 {
-        display: flex;
-        width: 100%;
-        font-size: small;
+        position: relative !important;
+        display: flex !important;
+        width: 100% !important;
+        font-size: small !important;
         font-weight: 200 !important;
+    }
+
+    .vector {
+        position: absolute !important;
+        width: 150px !important;
+        height: 6px !important;
+        right: 40px !important;
+        left: auto !important;
     }
 
     .typo2 {
@@ -113,5 +109,4 @@
         align-items: center;
         flex-wrap: wrap;
     }
-
 }

@@ -10,6 +10,7 @@ const Hero = () => {
           <Typography variant="h2">
             Book Business Class Flights For Less
           </Typography>
+          <img src="./images/vectorLine.svg" alt="vector" className="vector" />
         </div>
 
         <div className="typo2">
