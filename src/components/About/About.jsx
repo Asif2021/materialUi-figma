@@ -9,6 +9,9 @@ const About = () => {
         <div className="about_typo1">
         <Typography variant="h3">Travel to make memories all around the world</Typography>
         </div>
+        <div className="about_typo2">
+        <Typography variant="h6">Find trips that fit a flexible lifestyle</Typography>
+        </div>
       </div>
     </div>
   );
