@@ -10,19 +10,14 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Frame5 = () => {
   return (
     <div className="Frame_outer">
-      <Container>
-        <Toolbar>
-          <div >
-          <InputAdornments/>
-          </div>
-
-          <div className="Frame_buttons">
-          <Button variant="outlined" className="Frame_button" endIcon={<ExpandMoreIcon/>}>Bussiness</Button>
-          <Button variant="outlined" className="Frame_button" sx={{marginX:'20px'}} endIcon={<ExpandMoreIcon/>}>One Way</Button>
-          <Button variant="outlined" className="Frame_button" endIcon={<ExpandMoreIcon/>}>1 Adult</Button>
-          </div>
-        </Toolbar>
-      </Container>
+        <div>
+          <InputAdornments />
+        </div>
+        <div className="Frame_buttons">
+          <Button variant="outlined" className="Frame_button" endIcon={<ExpandMoreIcon />}>Bussiness</Button>
+          <Button variant="outlined" className="Frame_button" sx={{ marginX: '20px' }} endIcon={<ExpandMoreIcon />}>One Way</Button>
+          <Button variant="outlined" className="Frame_button" endIcon={<ExpandMoreIcon />}>1 Adult</Button>
+        </div>
     </div>
   );
 };
