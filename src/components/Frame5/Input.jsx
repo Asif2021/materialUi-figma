@@ -14,7 +14,7 @@ export default function InputAdornments() {
             placeholder='Location'
             InputProps={{
             startAdornment: <InputAdornment position="start">From: <i> <img src="images/divider.svg" alt="divider"/> </i> </InputAdornment>,
-            // endAdornment: <InputAdornment position="end"><i> <img src="images/map.svg" alt="map"/> </i> </InputAdornment>
+            endAdornment: <InputAdornment position="end"><i> <img src="images/map.svg" alt="map"/> </i> </InputAdornment>
           }}
         />
 

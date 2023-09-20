@@ -21,11 +21,70 @@
     width: 600px !important;
 }
 
-.MuiTypography-h3{
+.MuiTypography-h3 {
     font-weight: bold !important;
     font-size: 2.8rem !important;
 }
-.about_typo2{
+
+.about_typo2 {
     opacity: 0.5;
     color: black;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    margin-top: 90px;
+    width: 100%;
+    background: #8BC5E5;
+}
+.feature_section{
+    display: flex;
+width: 352px;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+
+.feature1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100%;
+    gap: 24px;
+    align-self: stretch;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.feature1_div {
+    color: #FCFCFD;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 2px 12px;
+    line-height: 20px;
+    border-radius: 100px;
+    background: #8BC5E5;
+    display: flex;
+    padding: 2px 12px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.feature1_typo1 {
+    text-align: start !important;
+    align-self: stretch;
+    color: #000;
+    font-weight: bold !important;
+    font-size: 2.2rem !important;
+}
+
+.feature1_typo2{
+    color: var(--neutrals-4, #777E90);
+    font-size: 27px;
+    align-self: stretch;
+    text-align: start;
+    font-weight: 400;
 }

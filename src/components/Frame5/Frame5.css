@@ -22,9 +22,10 @@
     border-radius: 10px !important;
     background: #F5F6F4 !important;
 }
-/* .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root{
+.css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root{
     border-radius: 10px !important;
-} */
+}
+
 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
 border-radius: 10px !important;
 border: none !important;
@@ -33,20 +34,32 @@ border: none !important;
     color: #000000 !important;
     font-weight: bold;
 }
-/* .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input{
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
     border: none !important;
-} */
-.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
+}
+.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
     color: #000000 !important;
     font-weight: bold !important;
     opacity: 1 !important;
-    border: none;
+    border: none !important;
 }
-.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus{
+.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input:focus{
+    color: #000000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+    border: none !important;   
+}
+
+.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
+    color: #000000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus{
     outline: none !important;
     color: #000000 !important;
     font-weight: bold !important;
-    /* border: none; */
 }
 
 .Frame_buttons {
@@ -67,12 +80,11 @@ border: none !important;
     font-weight: bold !important;
 }
 
- /* @media screen and (max-width: 800px) {
+ /* @media screen and (max-width: 1260px) {
    .Frame_outer{
     width: 100%;
     display: flex !important;
     flex-direction: column !important;
-    
    }
    .Frame_input{
     width: 100%;
