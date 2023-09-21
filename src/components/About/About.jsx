@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import {Button} from "@material-ui/core";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -42,7 +43,7 @@ const About = () => {
                   Have a dedicated point of contact for all of your travel
                   needs.
                 </Typography>
-             <div className="feature1_div" style={{background:'#92A5EF'}}>02</div>
+             <div className="feature1_div" style={{background:'#92A5EF', marginTop:'1.2rem'}}>02</div>
               <Typography variant="h5" className="feature1_typo1">
               Fast booking
                 </Typography>
@@ -50,14 +51,17 @@ const About = () => {
                 Have all of your flight options available when you make your request.
                 </Typography>
               
-              <div className="feature1_div" style={{background:'#58C27D'}}>03</div>
+              <div className="feature1_div" style={{background:'#58C27D', marginTop:'1.2rem'}}>03</div>
               <Typography variant="h5" className="feature1_typo1">
               Business Class
                 </Typography>
                 <Typography variant="p" className="feature1_typo2">
                 Yes, we wrote that as a benefit. At the end of the day you get to enjoy business class benefits at economy level pricing.
                 </Typography>
-              
+                <Button className="feature1_button">
+                  Start your search
+                </Button>
+            
               </div>
             </Grid>
             <Grid item xs={6}>
