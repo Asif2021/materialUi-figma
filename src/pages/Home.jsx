@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero'
 import Frame5 from '../components/Frame5/Frame5'
 import Frame1000 from '../components/Frame1000/Frame1000'
 import About from '../components/About/About'
+import HowItWorks from '../components/HowItWorks/HowItWorks'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Frame5/>
       <Frame1000/>
       <About/>
+      {/* <HowItWorks/> */}
     </React.Fragment>
   )
 }

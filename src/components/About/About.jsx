@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import {Button} from "@material-ui/core";
+import SwipeableTextMobileStepper from './Stepper'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -33,8 +34,8 @@ const About = () => {
         
         <div className="about_container">
           <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <div className="feature1">
+            <Grid item xs={12} md={6} className="about_feature_section">
+              <Item className="feature1">
                 <div className="feature1_div">01</div>
                 <Typography variant="h5" className="feature1_typo1">
                   Dedicated Rep
@@ -61,11 +62,12 @@ const About = () => {
                 <Button className="feature1_button">
                   Start your search
                 </Button>
-            
-              </div>
+              </Item>
             </Grid>
-            <Grid item xs={6}>
-              <Item>xs=8</Item>
+            <Grid item xs={12} md={6} className="about_image_section" >
+              <Item>
+                <SwipeableTextMobileStepper/>
+              </Item>
             </Grid>
           </Grid>
         </div>
