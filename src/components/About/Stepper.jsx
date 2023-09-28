@@ -1,38 +1,35 @@
-import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+import * as React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import MobileStepper from "@mui/material/MobileStepper";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
+import FlightCard from "./FlightCard";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      './images/dubai_imageSVG.svg',
+    label: "San Francisco – Oakland Bay Bridge, United States",
+    imgPath: "./images/dubai_imagePNG.png",
   },
   {
-    label: 'Bird',
-    imgPath:
-      './images/dubai_image.svg',
+    label: "Bird",
+    imgPath: "./images/dubai_imagePNG.png",
   },
-  // {
-  //   label: 'Bali, Indonesia',
-  //   imgPath:
-  //     'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
-  // },
-  // {
-  //   label: 'Goč, Serbia',
-  //   imgPath:
-  //     'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  // },
+  {
+    label: "Birds",
+    imgPath: "./images/dubai_imagePNG.png",
+  },
+  {
+    label: "dubai",
+    imgPath: "./images/dubai_imagePNG.png",
+  },
 ];
 
 function SwipeableTextMobileStepper() {
@@ -53,22 +50,9 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{flexGrow:1}}>
-      {/* <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          // bgcolor: 'background.default',
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper> */}
+    <Box sx={{ flexGrow: 1, position: "relative" }}>
       <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
@@ -78,13 +62,7 @@ function SwipeableTextMobileStepper() {
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
-                sx={{
-                  display: 'flex',
-                  overflow: 'hidden',
-                  width:"100%",
-                  height:'860px',
-                 
-                }}
+                className="carouselImage"
                 src={step.imgPath}
                 alt={step.label}
               />
@@ -92,10 +70,27 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
+
+      <div style={{ position: "absolute", top: "20px", right: "50px" }}>
+        <Button onClick={handleBack} disabled={activeStep === 0}>
+          <img src="./images/left-arrow.svg" alt="left" />
+        </Button>
+        <Button onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+          <img src="./images/right-arrow.svg" alt="right" />
+        </Button>
+      </div>
+
+      <Typography variant="contained" className="recently_booked">
+        recently booked
+      </Typography>
+      <div style={{position:'absolute', bottom:'10px', left:'70px'}}>
+        <FlightCard />
+      </div>
+
+      {/* <MobileStepper
+        position="absolute"
+        top='15px'
+        right="82px"
         nextButton={
           <Button
             size="small"
@@ -103,24 +98,14 @@ function SwipeableTextMobileStepper() {
             disabled={activeStep === maxSteps - 1}
           >
             <img src="./images/right-arrow.svg" alt="right" />
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
           </Button>
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
             <img src="./images/left-arrow.svg" alt="left" />
           </Button>
         }
-      />
+      /> */}
     </Box>
   );
 }
