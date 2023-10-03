@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import "./Hero.css";
+import Frame5 from "../Frame5/Frame5";
 
 const Hero = () => {
   return (
@@ -19,9 +20,9 @@ const Hero = () => {
             human customer support
           </Typography>
         </div>
-
-        <div className="Ellipse_15"></div>
+        <div className="Ellipse_15"> </div>
       </div>
+      <Frame5 />
     </div>
   );
 };

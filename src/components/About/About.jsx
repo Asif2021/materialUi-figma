@@ -19,7 +19,6 @@ const Item = styled(Paper)(({ theme }) => ({
 const About = () => {
   return (
     <div className="about_outer">
-    
         <div className="about_typo1">
           <Typography variant="h3">
             Travel to make memories all around the world

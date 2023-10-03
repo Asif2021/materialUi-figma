@@ -5,10 +5,8 @@ import TextField from '@mui/material/TextField';
 
 export default function InputAdornments() {
 
-  return (
-    <Box >
-      
-      <Box style={{display:'flex', flexDirection:'row'}}>
+  return (     
+      <div style={{display:'flex', flexDirection:'row'}}>
         <TextField
             className='Frame_input'
             placeholder='Location'
@@ -26,9 +24,6 @@ export default function InputAdornments() {
             startAdornment: <InputAdornment position="start"> To: <i sx={{marginX:'24px'}}> <img src="images/divider.svg" alt="divider" /> </i></InputAdornment>,
           }}
         />
-        </Box>
-        
-      
-    </Box>
+        </div>
   );
 }
