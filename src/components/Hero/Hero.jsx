@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className="Ellipse_15"> </div>
       </div>
-      <Frame5 />
+      {/* <Frame5 /> */}
     </div>
   );
 };

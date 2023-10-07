@@ -14,13 +14,13 @@
     gap: 24px;
 }
 
-.Frame_input_outer{
+.Frame_input_outer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     gap: 16px;
     width: 70%;
-    }
+}
 
 .Frame_input {
     display: flex;
@@ -29,50 +29,56 @@
     border-radius: 10px;
     background: #F5F6F4;
 }
-.Frame_input .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root{
+
+.Frame_input .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root {
     border-radius: 10px !important;
 }
 
-.Frame_input .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
-border-radius: 10px !important;
-border: none !important;
+.Frame_input .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 10px !important;
+    border: none !important;
 }
-.Frame_input .css-ittuaa-MuiInputAdornment-root{
+
+.Frame_input .css-ittuaa-MuiInputAdornment-root {
     color: #000000 !important;
     font-weight: bold;
 }
-.Frame_input .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+
+.Frame_input .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border: none !important;
-}
-.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
-    color: #000000 !important;
-    font-weight: bold !important;
-    opacity: 1 !important;
-    border: none !important;
-}
-.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input:focus{
-    color: #000000 !important;
-    font-weight: bold !important;
-    opacity: 1 !important;
-    border: none !important;   
 }
 
-.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input::placeholder{
+.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input::placeholder {
     color: #000000 !important;
     font-weight: bold !important;
     opacity: 1 !important;
     border: none !important;
 }
-.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus{
+
+.Frame_input .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input:focus {
+    color: #000000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input::placeholder {
+    color: #000000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+.Frame_input .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus {
     outline: none !important;
     color: #000000 !important;
     font-weight: bold !important;
 }
 
 .Frame_buttons {
-   display: flex;
-   justify-content: space-evenly;
-   width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
 .Frame_buttons button {
@@ -88,38 +94,44 @@ border: none !important;
     font-weight: bold;
 }
 
- @media screen and (max-width: 1270px) {
-   .Frame_outer{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding: 20px 0px;
-       height: auto;
-       width: 70%;
-   }
-   .Frame_input_outer{
-    width: 80%;
-   }
-   .Frame_buttons{
-    justify-content: space-between;
-    width: 80%;
-   }
-  }
-  @media screen and (max-width: 700px){
-    .Frame_outer{
+@media screen and (max-width: 1270px) {
+    .Frame_outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        height: auto;
+        width: 70%;
+    }
+
+    .Frame_input_outer {
+        width: 80%;
+    }
+
+    .Frame_buttons {
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Frame_outer {
         position: absolute;
         bottom: -240px;
     }
-       .Frame_input_outer{
-    flex-direction: column;
-        width:80%;
+
+    .Frame_input_outer {
+        flex-direction: column;
+        width: 80%;
     }
-    .Frame_input{
+
+    .Frame_input {
         width: 100%;
     }
-    .Frame_buttons{
+
+    .Frame_buttons {
         flex-direction: column;
         gap: 13px;
     }
-  }
+}

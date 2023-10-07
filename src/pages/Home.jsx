@@ -9,8 +9,8 @@ const Home = () => {
     <React.Fragment>
       <DrawerAppBar />
       <Hero />
-      {/* <About /> */}
-      {/* <HowItWorks/> */}
+      <About />
+      <HowItWorks/>
     </React.Fragment>
   );
 };

@@ -1,7 +1,6 @@
 .about_outer {
     display: flex;
-    height: 1100px;
-    padding: 30px 160px 30px 160px;
+    padding: 90px 160px 30px 160px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -9,16 +8,8 @@
     background: #FDFDFD;
 }
 
-.about_inner {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100%;
-}
-
 .about_typo1 {
-    width: 600px !important;
+    width: 60%;
 }
 
 .about_typo1 .MuiTypography-h3 {
@@ -182,4 +173,11 @@
     font-size: large;
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width:800px) {
+.about_outer{
+    width: 100%;
+    padding: 40px 0px;
+}    
 }
