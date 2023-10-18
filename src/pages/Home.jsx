@@ -10,7 +10,7 @@ const Home = () => {
       <DrawerAppBar />
       <Hero />
       <About />
-      <HowItWorks/>
+      {/* <HowItWorks/> */}
     </React.Fragment>
   );
 };
