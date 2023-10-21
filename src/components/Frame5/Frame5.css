@@ -115,10 +115,10 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .Frame_outer {
         position: absolute;
-        bottom: -240px;
+        bottom: -280px;
     }
 
     .Frame_input_outer {

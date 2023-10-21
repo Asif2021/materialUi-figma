@@ -10,24 +10,24 @@ const HowItWorks = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
       </Typography>
 
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={8}>
+      <Grid container>
+        <Grid item xs={12} md={7}>
           <img src="./images/illustration.png" alt="illustration" />
         </Grid>
-        <Grid md={1}>
-        <img src="./images/blue_check.svg" alt="svg" />
-        </Grid>
-
-        <Grid item xs={12} md={3}>
+        
+        <Grid item xs={12} md={5}>
           <span className="howItWorks_step">STEP 1</span>
           <div>
-            <span className="howItWorks_step_span">
+            <div className="howItWorks_step_span1">
+            <img src="./images/blue_check.svg" alt="svg" />
              <Typography variant="h4"> Search Flights</Typography>
-            </span>
-            <Typography variant="p">
-            
+            </div>
+            <div className="howItWorks_step_span2">
+            <img src="./images/blue_check.svg" alt="svg" />
+            <Typography variant="body2">
               Enter flight destination and dates. Click search
             </Typography>
+            </div>
           </div>
         </Grid>
       </Grid>

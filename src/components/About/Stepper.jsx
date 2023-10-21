@@ -71,8 +71,8 @@ function SwipeableTextMobileStepper() {
         ))}
       </AutoPlaySwipeableViews>
 
-      <Box style={{ position: "absolute", top: "20px", right: "45px" }}>
-        <Button onClick={handleBack} disabled={activeStep === 0}>
+      <Box className="arrows">
+        <Button className="arrows_button" onClick={handleBack} disabled={activeStep === 0}>
           <img src="./images/left-arrow.svg" alt="left" />
         </Button>
         <Button onClick={handleNext} disabled={activeStep === maxSteps - 1}>
@@ -83,9 +83,9 @@ function SwipeableTextMobileStepper() {
       <Typography variant="contained" className="recently_booked">
         recently booked
       </Typography>
-      <div style={{position:'absolute', bottom:'10px', left:'70px'}}>
+
         <FlightCard />
-      </div>
+    
 
       {/* <MobileStepper
         position="absolute"

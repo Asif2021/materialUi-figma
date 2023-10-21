@@ -27,7 +27,7 @@ const FlightCard = () => {
       </div>
       <div className="flightcard_bottom">
         <Typography variant="h3">$3,256</Typography>
-        <Button variant="outlin">Book Flight <i><img src="./images/arrowicon.svg" alt="arrow" /></i> </Button>
+        <Button variant="outlin">Book Flight <img src="./images/arrowicon.svg" alt="arrow" /> </Button>
       </div>
     </div>
   );

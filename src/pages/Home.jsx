@@ -6,12 +6,12 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <div>
       <DrawerAppBar />
       <Hero />
       <About />
       {/* <HowItWorks/> */}
-    </React.Fragment>
+    </div>
   );
 };
 
