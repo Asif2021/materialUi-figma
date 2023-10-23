@@ -30,7 +30,7 @@ const About = () => {
         
         <Box className="about_container">
           <Grid container spacing={2}>
-            <Grid item sm={12} md={4}>
+            <Grid item sm={12} md={4} className="feature_section">
               <Box className="feature1">
                 <span className="feature1_span" style={{backgroundColor:'#8BC5E5'}}>01</span>
                 <Typography variant="h5" className="feature1_typo1">
@@ -63,7 +63,7 @@ const About = () => {
               Start your search
               </Button>
             </Grid>
-            <Grid item sm={1} md={2}>
+            <Grid item md={2}>
             </Grid>
             <Grid item sm={12} md={6} className="about_image_section">
                 <SwipeableTextMobileStepper/>

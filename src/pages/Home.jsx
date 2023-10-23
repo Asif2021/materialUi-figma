@@ -7,10 +7,10 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 const Home = () => {
   return (
     <div>
-      <DrawerAppBar />
+      {/* <DrawerAppBar />
       <Hero />
-      <About />
-      {/* <HowItWorks/> */}
+      <About /> */}
+      <HowItWorks/>
     </div>
   );
 };

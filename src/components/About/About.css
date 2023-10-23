@@ -40,6 +40,9 @@
 .about_image_section .css-xhd3h8:first-child div {
     border-radius: 45px !important;
 }
+.feature_section{
+    text-align: start;
+}
 
 .feature1 {
     display: flex !important;
@@ -178,7 +181,7 @@
 
 
 
-@media  screen and (max-width:1150px) {
+@media  screen and (max-width:950px) {
     .about_outer{
         padding: 20px;
         margin-top: 8rem;
@@ -206,8 +209,8 @@
     .feature1_typo2 {
         text-align: center;
     }
-    .feature1_button{
-        align-self: center;
+    .feature_section{
+        text-align: center;
     }
     .carouselImage{
         margin: 0px 30px;

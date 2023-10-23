@@ -3,35 +3,64 @@
     padding: 40px 120px;
 }
 
-.howItWorks_step {
-    display: flex;
-    align-items: start;
-    color: #C4C4C4;
-    font-family: Gilroy;
-    font-size: 18px;
-    padding-left: 5.2rem;
-
-}
-
-.howItWorks_step_span1 {
-    display: flex;
-    flex-direction: row;
-}
-
-.howItWorks_step_span1 h4 {
+.howItWorks_typos h3 {
     color: #000;
     text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 3.2rem;
+    font-size: 48px;
+    font-weight: bold;
 }
-.howItWorks_step_span2{
+
+.howItWorks_typos_body1 {
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.howItWorks_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 0px;
+}
+
+.howItWorks_image {
+    width: 50%;
     display: flex;
 }
 
-.howItWorks_step_span2 .css-e784if-MuiTypography-root {
+.howItWorks_image img {
+    overflow: auto;
+}
+
+.howItWorks_images_section {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.howItWorks_steps {
+    width: 40%;
+    text-align: start;
+    }
+
+.howItWorks_steps h6 {
+    color: #C4C4C4;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.howItWorks_steps h4 {
+    font-weight: bold;
+}
+
+.howItWorks_step_div2_body2 {
     color: var(--neutrals-4, #777E90);
-    justify-content: start;
-    padding-left: 3.8rem;
-    font-size: 1.2rem;
+    font-size: 14px;
+   line-height: 44px;
+   padding-top: 20px;
+   width: 50%;
+
 }

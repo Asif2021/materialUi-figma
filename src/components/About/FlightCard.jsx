@@ -6,21 +6,21 @@ const FlightCard = () => {
   return (
     <div className="flightcard_outer">
       <div className="filghtcard_top">
-        <span>
+        <div>
           <img src="./images/emirates.svg" alt="emirates" />
-        </span>
-        <span>
+        </div>
+        <div>
           <Typography variant="h6">AKL</Typography>
           {currTime}
-        </span>
-        <span>
+        </div>
+        <div>
           <img src="./images/flightcard_line.svg" alt="flightcardLine" />
           <Typography> non-stop </Typography>
-        </span>
-        <span>
+        </div>
+        <div>
           <Typography variant="h6">SGN</Typography>
           {currTime}
-        </span>
+        </div>
       </div>
       <div className="flightcard_middle">
         <img src="./images/frame1138.svg" alt="frame1138" />
