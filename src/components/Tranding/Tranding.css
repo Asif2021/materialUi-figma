@@ -1,8 +1,7 @@
 .tranding_outer {
     width: 100%;
     display: flex;
-    /* height: 1307px; */
-    padding: 0px 160px;
+    padding: 50px 160px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -42,43 +41,48 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    margin: 20px;
+    flex-wrap: wrap;
+    }
+
+.tranding_card_outer {
+    width: 49%;
+    overflow: hidden;
+    border: 1px solid var(--neutrals-3, #353945);
+    padding: 15px;
+    border-radius: 24px;
+    margin: 10px 0px;
 }
 
-.tanding_left {
-    width: 48%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 24px;
-    border: 1px solid var(--neutrals-3, #353945);
-    padding: 20px;
-}
+/* .tranding_image{width: 100%;} */
 
 .tranding_upper {
-    display: flex;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0px;
 }
 
+.tranding_upper img {
+    width: 30%;
+}
+
 .tranding_inner {
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 .tranding_inner h6 {
     color: #000;
-
-    /* Body 1 (Bold) */
-    font-family: Poppins;
+   font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    /* 133.333% */
 }
 
 .tranding_inner span {
@@ -98,28 +102,59 @@
 }
 
 .tranding_bottom {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.tranding_bottom_button {
+.tranding_bottom h4 {
+    /* width: 25%; */
     display: flex;
-    padding: 16px 34px;
-    justify-content: center;
+    font-weight: bold;
     align-items: center;
-    gap: 12px;
+}
+
+.tranding_bottom_button {
+    width: 30%;
+    display: flex;
+    padding: 18px 20px !important;
+    justify-content: right;
+    align-items: center;
     align-self: stretch;
     border-radius: 25px !important;
 }
 
 .tanding_right {
-    width: 48%;
+    width: 49%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 24px;
-    border: 1px solid var(--neutrals-3, #353945);
-    padding: 20px;
+    gap: 30px;}
+
+.tranding_box {
+    width: 100%;
+}
+.tranding_showmore_button{
+ display: flex;
+padding: 16px 24px !important;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 90px !important;
+border: 2px solid var(--neutrals-4, #777E90) !important;
+}
+
+@media screen and (max-width: 900px){
+.tranding_outer{
+    padding: 0px 40px;
+}
+.tranding_container{
+flex-direction: column;
+gap: 24px;
+}
+.tranding_card_outer{
+    width: 100%;
+ }
 
 }

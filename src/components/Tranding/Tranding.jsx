@@ -1,7 +1,8 @@
 import React from "react";
 import "./Tranding.css";
 import { Box, Typography, Button } from "@mui/material";
-import TrandingFlightCard from './TrandingFlightCard'
+import TrandingFlightCard from "./TrandingFlightCard";
+import data from '../../data.json';
 
 const Tranding = () => {
   return (
@@ -12,16 +13,12 @@ const Tranding = () => {
           Find and book a great experience.
         </Typography>
       </Box>
-
-      <Box className="tranding_container">
-        <Box className="tanding_left">
-            <TrandingFlightCard/>
-        </Box>
-
-        <Box className="tanding_right">
-        <TrandingFlightCard/>
-        </Box>
+      <Box className="tranding_container"> 
+            <TrandingFlightCard />
       </Box>
+      <Button variant="outline" className="tranding_showmore_button">
+         <img src="./images/loading.svg" alt="loading" /> show more
+      </Button>
     </Box>
   );
 };

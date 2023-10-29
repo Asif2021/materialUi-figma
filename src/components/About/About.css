@@ -100,6 +100,7 @@
     border-radius: 45px !important;
 }
 .arrows{
+    /* width: 30%; */
     position: absolute;
     top: 20px;
     right: 45px; 
@@ -111,6 +112,7 @@
 } */
 
 .recently_booked {
+    /* width: 30%; */
     position: absolute;
     top: 27px;
     left: 60px;
@@ -177,16 +179,13 @@
     font-size: large;
     width: 25px;
 }
-
-
-
-
-@media  screen and (max-width:950px) {
-    .about_outer{
-        padding: 20px;
-        margin-top: 8rem;
-    }
-    
+.stepper_outer{
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+.recentlyAndArrows{
+    width: 100%;
 }
 
 @media screen and (max-width:900px) {
@@ -213,7 +212,7 @@
         text-align: center;
     }
     .carouselImage{
-        margin: 0px 30px;
-       height: 55rem;
+        /* margin: 0px 30px; */
+       height: 50rem;
     }
     }

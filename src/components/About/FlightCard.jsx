@@ -1,35 +1,33 @@
-import { Typography, Button } from "@mui/material";
+import { Typography, Button, Box } from "@mui/material";
 
 const FlightCard = () => {
   const currTime = new Date().toLocaleTimeString();
 
   return (
-    <div className="flightcard_outer">
-      <div className="filghtcard_top">
-        <div>
+    <Box className="flightcard_outer">
+      <Box className="filghtcard_top">
           <img src="./images/emirates.svg" alt="emirates" />
-        </div>
-        <div>
+        <Box>
           <Typography variant="h6">AKL</Typography>
           {currTime}
-        </div>
-        <div>
+        </Box>
+        <Box>
           <img src="./images/flightcard_line.svg" alt="flightcardLine" />
           <Typography> non-stop </Typography>
-        </div>
-        <div>
+        </Box>
+        <Box>
           <Typography variant="h6">SGN</Typography>
           {currTime}
-        </div>
-      </div>
-      <div className="flightcard_middle">
+        </Box>
+      </Box>
+      <Box className="flightcard_middle">
         <img src="./images/frame1138.svg" alt="frame1138" />
-      </div>
-      <div className="flightcard_bottom">
+      </Box>
+      <Box className="flightcard_bottom">
         <Typography variant="h3">$3,256</Typography>
         <Button variant="outlin">Book Flight <img src="./images/arrowicon.svg" alt="arrow" /> </Button>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

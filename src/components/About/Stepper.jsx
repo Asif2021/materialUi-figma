@@ -18,18 +18,18 @@ const images = [
     label: "San Francisco – Oakland Bay Bridge, United States",
     imgPath: "./images/dubai_imagePNG.png",
   },
-  {
-    label: "Bird",
-    imgPath: "./images/dubai_imagePNG.png",
-  },
-  {
-    label: "Birds",
-    imgPath: "./images/dubai_imagePNG.png",
-  },
-  {
-    label: "dubai",
-    imgPath: "./images/dubai_imagePNG.png",
-  },
+  // {
+  //   label: "Bird",
+  //   imgPath: "./images/dubai_imagePNG.png",
+  // },
+  // {
+  //   label: "Birds",
+  //   imgPath: "./images/dubai_imagePNG.png",
+  // },
+  // {
+  //   label: "dubai",
+  //   imgPath: "./images/dubai_imagePNG.png",
+  // },
 ];
 
 function SwipeableTextMobileStepper() {
@@ -50,7 +50,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, position: "relative" }}>
+    <Box className="stepper_outer">
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
@@ -71,21 +71,27 @@ function SwipeableTextMobileStepper() {
         ))}
       </AutoPlaySwipeableViews>
 
-      <Box className="arrows">
-        <Button className="arrows_button" onClick={handleBack} disabled={activeStep === 0}>
+      <Box className="recentlyAndArrows">
+        <Typography variant="contained" className="recently_booked">
+          recently booked
+        </Typography>
+        <Box className="arrows">
+        <Button
+          className="arrows_button"
+          onClick={handleBack}
+          disabled={activeStep === 0}
+        >
           <img src="./images/left-arrow.svg" alt="left" />
         </Button>
         <Button onClick={handleNext} disabled={activeStep === maxSteps - 1}>
           <img src="./images/right-arrow.svg" alt="right" />
         </Button>
       </Box>
+      </Box>
 
-      <Typography variant="contained" className="recently_booked">
-        recently booked
-      </Typography>
+      
 
-        <FlightCard />
-    
+      <FlightCard />
 
       {/* <MobileStepper
         position="absolute"

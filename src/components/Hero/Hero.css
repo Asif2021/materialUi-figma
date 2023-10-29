@@ -61,7 +61,7 @@
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .hero_outer {
         display: flex;
         justify-content: center;
@@ -92,7 +92,7 @@
         position: absolute !important;
         width: 150px !important;
         height: 6px !important;
-        right: 40px !important;
+        right: 30% !important;
         left: auto !important;
     }
 

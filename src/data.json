@@ -1,0 +1,60 @@
+[
+    {
+     "id": 0,
+     "image":"./images/emirates.svg",
+     "fname":"LHR",
+     "ftime":"6:45 AM",
+     "stop":"non-stop",
+     "lname":"KCH",
+     "ltime":"9:45 AM",
+     "price":"$3,256"
+    },
+    {
+        "id": 1,
+        "image":"./images/emirates.svg",
+        "fname":"AKL",
+        "ftime":"6:45 AM",
+        "stop":"non-stop",
+        "lname":"SGN",
+        "ltime":"9:45 AM",
+        "price":"$3,256"
+       }, {
+        "id": 2,
+        "image":"./images/emirates.svg",
+        "fname":"AKL",
+        "ftime":"6:45 AM",
+        "stop":"non-stop",
+        "lname":"SGN",
+        "ltime":"9:45 AM",
+        "price":"$3,256"
+       }, {
+        "id": 3,
+        "image":"./images/emirates.svg",
+        "fname":"AKL",
+        "ftime":"6:45 AM",
+        "stop":"non-stop",
+        "lname":"SGN",
+        "ltime":"9:45 AM",
+        "price":"$3,256"
+       },
+       {
+        "id": 4,
+        "image":"./images/emirates.svg",
+        "fname":"AKL",
+        "ftime":"6:45 AM",
+        "stop":"non-stop",
+        "lname":"SGN",
+        "ltime":"9:45 AM",
+        "price":"$3,256"
+       }, {
+        "id": 5,
+        "image":"./images/emirates.svg",
+        "fname":"AKL",
+        "ftime":"6:45 AM",
+        "stop":"non-stop",
+        "lname":"SGN",
+        "ltime":"9:45 AM",
+        "price":"$3,256"
+       }
+
+]
