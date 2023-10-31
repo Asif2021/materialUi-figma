@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import data from '../../data.json';
 
-const TrandingFlightCard = () => {
-  return ( data.map((data, i) => (
+const TrandingFlightCard = (props) => {
+  const { data } = props
+  return (
         <Box className="tranding_card_outer" key={data.id}>
          <Box className="tranding_upper">
          <img src={data.image} alt="emirates" />
@@ -51,7 +51,7 @@ const TrandingFlightCard = () => {
           </Button>
         </Box>
         </Box>
-      ))
+      
      
   );
 };

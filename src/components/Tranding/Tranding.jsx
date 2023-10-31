@@ -2,7 +2,8 @@ import React from "react";
 import "./Tranding.css";
 import { Box, Typography, Button } from "@mui/material";
 import TrandingFlightCard from "./TrandingFlightCard";
-import data from '../../data.json';
+import data from  '../../data.json'
+
 
 const Tranding = () => {
   return (
@@ -14,7 +15,9 @@ const Tranding = () => {
         </Typography>
       </Box>
       <Box className="tranding_container"> 
-            <TrandingFlightCard />
+      {data.map((item) => (
+        <TrandingFlightCard data={item} />
+      ))}  
       </Box>
       <Button variant="outline" className="tranding_showmore_button">
          <img src="./images/loading.svg" alt="loading" /> show more
