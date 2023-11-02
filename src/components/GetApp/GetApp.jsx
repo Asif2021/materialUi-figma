@@ -2,6 +2,7 @@ import { Box, Typography,Button } from "@mui/material";
 import React from "react";
 import "./GetApp.css";
 
+
 const GetApp = () => {
   return (
     <Box className="getapp_outer">

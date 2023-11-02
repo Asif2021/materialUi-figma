@@ -1,0 +1,114 @@
+.footer_outer {
+    width: 100%;
+    display: flex;
+    padding: 80px 160px 0px 160px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--neutrals-1, #141416);
+    gap: 10px;
+}
+
+.footer_upper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+}
+
+.footer_upper img {
+    display: flex;
+    place-self: flex-start;
+}
+
+.footer_link_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 40%;
+}
+
+.footer_link {
+    text-decoration: none !important;
+    color: var(--neutrals-4, #777E90) !important;
+    /* width: 30%; */
+}
+
+.footer_upper_typo {
+    color: var(--neutrals-6, #E6E8EC);
+    font-weight: bold !important;
+}
+
+.footer_input {
+    display: flex;
+    border-radius: 90px;
+    border: 2px solid var(--neutrals-3, #353945);
+    padding: 8px 8px 8px 16px;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent !important;
+    gap: 18px;
+}
+
+.footer_input input {
+    padding: 8px 8px 8px 16px;
+    border: none;
+    background: transparent;
+}
+.footer_input input:focus{
+    color: white;
+    outline: none;
+}
+.footer_input Button {
+    padding: 8px 8px 8px 10px;
+    background-color: blue;
+    border-radius: 100px;
+}
+.footer_input Button:hover{
+    background-color: blue;
+}
+.footer_input Button img{
+    border-radius: 90px;
+}
+
+.footer_bottom {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.bottom_typo {
+    color: var(--neutrals-4, #777E90);
+}
+
+@media screen and (max-width:900px){
+   .footer_upper{
+    flex-direction: column;
+    padding: 0px;
+    gap: 20px;
+   } 
+   .footer_link_container{
+   width: 100%;
+    }
+   .footer_link_container img{
+    place-self: center;
+   }
+   .footer_link{
+    place-self: center;
+   }
+   .footer_upper_typo{
+    place-self: center;
+   }
+   .footer_input{
+    place-self: center;
+   }
+   .bottom_typo{
+    place-self: center;
+   }
+
+}

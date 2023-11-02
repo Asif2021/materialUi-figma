@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 import Tranding from "../components/Tranding/Tranding";
 import Questions from "../components/Questions/Questions";
 import GetApp from "../components/GetApp/GetApp";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Tranding/>
       <GetApp/>
       <Questions/>
+      <Footer/>
     </div>
   );
 };

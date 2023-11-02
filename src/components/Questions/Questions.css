@@ -62,14 +62,14 @@ border-radius: 8px;
     font-weight: bold;
 }
 
-.question_button {
+.question_button Button{
     display: flex;
-    padding: 16px 24px;
+    padding: 16px 24px !important;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    border-radius: 90px;
-    border: 2px solid var(--neutrals-4, #777E90);
+    border-radius: 90px !important;
+    border: 2px solid var(--neutrals-4, #777E90) !important;
 }
 
 @media screen and  (max-width:900px) {
