@@ -18,14 +18,12 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const About = () => {
-  const { setValue} = useContext(Context);
-  const { setLoading} = useContext(Context);
+  const { setValue, setLoading} = useContext(Context);
  
   async function getData() {
     setLoading(true);
-    // const url = "https://fakestoreapi.com/products";
-    const url = "https://timetable-lookup.p.rapidapi.com/TimeTable/BOS/LAX/20191217/";
-    const options = {
+    const url = "https://fakestoreapi.com/products";
+       const options = {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': 'd53d2d50d1msh2a1aa8c7c5e8982p19b490jsnfbbe41ccc07d',

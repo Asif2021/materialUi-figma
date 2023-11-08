@@ -7,8 +7,7 @@ import Context from "./Context";
 import { RotatingLines } from "react-loader-spinner";
 
 const Tranding = () => {
-  const { value } = useContext(Context);
-  const { loading } = useContext(Context);
+  const { value, loading } = useContext(Context);
 
   console.log(value);
   return (
@@ -21,7 +20,7 @@ const Tranding = () => {
       </Box>
       <Box className="tranding_container">
         {loading ? (
-          <Box className="spinner"> 
+          <Box className="spinner">
             <RotatingLines strokeColor="grey" />
           </Box>
         ) : (
